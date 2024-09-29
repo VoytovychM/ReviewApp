@@ -1,0 +1,6 @@
+services:
+  db-reviews:
+    image: postgres:alpine
+    environment: { POSTGRES_PASSWORD: postgres }
+    ports: [ '5442:5432' ]
+    restart: always

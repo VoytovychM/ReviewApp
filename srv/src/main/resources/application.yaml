@@ -1,0 +1,19 @@
+---
+spring:
+  datasource:
+    password: postgres
+    embedded-database-connection: none
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5442/postgres
+    username: postgres
+  config:
+    activate:
+      on-profile: default
+  liquibase:
+    contexts: dev
+    enabled: true
+    change-log: db/changelog/db.changelog-master.yaml
+cds:
+  data-source:
+    auto-config:
+      enabled: false
