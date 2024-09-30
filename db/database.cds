@@ -13,7 +13,7 @@ entity User : cuid {
     username: String(64);
     email: String(128);
     password: String(256);
-    averageRating: Double();
+    averageRating: Double;
     role: String enum {
       admin = 'admin';
       user = 'user';
