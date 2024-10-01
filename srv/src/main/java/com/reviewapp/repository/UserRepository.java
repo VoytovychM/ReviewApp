@@ -16,6 +16,6 @@ public class UserRepository {
 
     public void updateAvrRating(String userId, double avrRating) {
        Update updateAvrRating = Update.entity(USER).data("averageRating", avrRating).byId(userId);
-        persistenceService.run(updateAvrRating);
+       persistenceService.run(updateAvrRating);
     }
 }
